@@ -17,7 +17,7 @@ import jakarta.persistence.*;
 
         @Column(nullable = false, length = 2)
         @Enumerated(EnumType.STRING)
-        private UF uf;
+        private Uf uf;
 
         @Column(nullable = false, length = 9)
         private String cep;
@@ -51,11 +51,11 @@ import jakarta.persistence.*;
             this.cidade = cidade;
         }
 
-        public UF getUf() {
+        public Uf getUf() {
             return uf;
         }
 
-        public void setUf(UF uf) {
+        public void setUf(Uf uf) {
             this.uf = uf;
         }
 
