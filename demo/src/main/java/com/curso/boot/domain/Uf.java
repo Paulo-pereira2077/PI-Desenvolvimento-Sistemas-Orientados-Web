@@ -30,10 +30,10 @@ public enum Uf {
     SE( "SE", "Segipe"),
     TO( "TO", "Tocantins");
 
-    private static String sigla;
-    private String descricao;
+    private final String sigla;
+    private final String descricao;
 
-    Uf(String descricao) {
+    Uf(String sigla, String descricao) {
         this.sigla = sigla;
         this.descricao = descricao;
     }

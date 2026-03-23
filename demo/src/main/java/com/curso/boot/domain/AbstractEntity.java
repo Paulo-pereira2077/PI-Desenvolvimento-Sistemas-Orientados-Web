@@ -40,4 +40,16 @@ public class AbstractEntity<ID extends Serializable> implements Serializable {
         return true;
     }
 
+    public ID getId() {
+        return Id;
+    }
+
+    public void setId(ID id) {
+            Id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Id=" + Id;
+    }
 }
