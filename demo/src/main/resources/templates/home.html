@@ -1,5 +1,9 @@
 <!doctype html>
-<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<html
+        lang="pt"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
   <head>
     <title>Spring-Boot</title>
     <meta charset="UTF-8" />
@@ -266,11 +270,8 @@
         </div>
       </section>
     </div>
-    <footer class="layout-footer">
-      <div class="container">
-        <span class="footer-copy">&copy; Todos os direitos reservados.</span>
-      </div>
-    </footer>
+
+    <footer th: replace="~{fragments/footer: rodape}"></footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
